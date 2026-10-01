@@ -1,1 +1,645 @@
+Raed ., [21/04/48 02:19 ص]
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مركز الدكتور عبدالله قائد المخلافي لطب وجراحة العيون</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0077b6;
+            --primary-dark: #023e8a;
+            --accent: #00b4d8;
+            --gold: #d4af37;
+            --bg-light: #f8fafc;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --white: #ffffff;
+            --green: #10b981;
+            --warning-bg: #fffbeb;
+            --warning-border: #fde68a;
+            --warning-text: #92400e;
+            --card-shadow: 0 10px 25px rgba(0, 119, 182, 0.08);
+            --radius: 16px;
+        }
 
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding-bottom: 70px;
+        }
+
+        header.top-header {
+            background: linear-gradient(135deg, var(--primary-dark), #005f73);
+            color: var(--white);
+            padding: 3.5rem 1.5rem 4.5rem;
+            text-align: center;
+            border-bottom-left-radius: 35px;
+            border-bottom-right-radius: 35px;
+            box-shadow: 0 12px 30px rgba(2, 62, 138, 0.2);
+            position: relative;
+        }
+
+        .badges-wrap {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 1.2rem;
+        }
+
+        .doctor-badge {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .free-badge {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #ffffff;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 800;
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        header h1 {
+            font-size: clamp(1.8rem, 4vw, 2.4rem);
+            font-weight: 900;
+            margin-bottom: 0.4rem;
+            letter-spacing: -0.5px;
+        }
+
+        .specialty-sub {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #90e0ef;
+            margin-bottom: 0.8rem;
+        }
+
+        .header-address {
+            font-size: 0.95rem;
+            color: #e0f2fe;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .header-actions {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn-call-header {
+            background: #ffffff;
+            color: var(--primary-dark);
+            text-decoration: none;
+            padding: 10px 22px;
+            border-radius: 25px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: 0.3s;
+        }
+
+        .btn-call-header:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .container {
+            max-width: 850px;
+            margin: -2.5rem auto 2rem;
+            padding: 0 1.2rem;
+        }
+
+Raed ., [21/04/48 02:19 ص]
+.card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 2rem;
+            margin-bottom: 1.8rem;
+            box-shadow: var(--card-shadow);
+            border: 1px solid #e2e8f0;
+        }
+
+        .card h2 {
+            font-size: 1.35rem;
+            color: var(--primary-dark);
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 0.8rem;
+        }
+
+        .location-box {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            border-radius: 12px;
+            padding: 1.2rem 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #1e3a8a;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .notice-box {
+            background-color: var(--warning-bg);
+            border: 1px solid var(--warning-border);
+            color: var(--warning-text);
+            padding: 1.1rem 1.4rem;
+            border-radius: 12px;
+            margin-bottom: 1.8rem;
+            font-weight: 600;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 4px 12px rgba(217, 119, 6, 0.06);
+        }
+
+        .schedule-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .schedule-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 1rem 1.4rem;
+            border-radius: 12px;
+            font-size: 0.95rem;
+        }
+
+        .schedule-day {
+            font-weight: 800;
+            color: var(--primary-dark);
+        }
+
+        .schedule-time {
+            color: #334155;
+            font-weight: 600;
+        }
+
+        .schedule-item.closed {
+            background: #fef2f2;
+            border-color: #fecaca;
+        }
+
+        .schedule-item.closed .schedule-day,
+        .schedule-item.closed .schedule-time {
+            color: #b91c1c;
+        }
+
+        .glasses-intro {
+            background: linear-gradient(135deg, #f0fdf4, #e0f2fe);
+            border: 1px solid #bbf7d0;
+            border-radius: 14px;
+            padding: 1.3rem;
+            margin-bottom: 1.6rem;
+            text-align: center;
+        }
+
+        .glasses-intro h3 {
+            color: #166534;
+            font-size: 1.2rem;
+            margin-bottom: 0.4rem;
+            font-weight: 800;
+        }
+
+        .glasses-intro p {
+            color: #334155;
+            font-size: 0.95rem;
+        }
+
+        .glasses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.2rem;
+            margin-bottom: 1.8rem;
+        }
+
+        .glasses-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            overflow: hidden;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .glasses-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.08);
+            border-color: var(--accent);
+        }
+
+        .glasses-card img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            background: #f1f5f9;
+        }
+
+        .glasses-card-body {
+            padding: 1rem 0.8rem;
+            flex-grow: 1;
+        }
+
+        .glasses-card-body h4 {
+            font-size: 0.95rem;
+            color: var(--primary-dark);
+            margin-bottom: 0.3rem;
+            font-weight: 800;
+        }
+
+Raed ., [21/04/48 02:19 ص]
+.glasses-card-body p {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
+        .specialist-box {
+            background: #f8fafc;
+            border: 2px dashed #93c5fd;
+            border-radius: 14px;
+            padding: 1.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .specialist-info h4 {
+            color: var(--primary-dark);
+            font-size: 1.05rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .specialist-info p {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .specialist-btns {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn-opt {
+            background: #25d366;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-opt.call {
+            background: var(--primary);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.2rem;
+        }
+
+        .service-item {
+            background: #f0f9ff;
+            border: 1px solid #bae6fd;
+            border-radius: 12px;
+            padding: 1.4rem;
+            text-align: center;
+        }
+
+        .service-item h3 {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .service-item p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+            color: var(--text-main);
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1.5px solid #cbd5e1;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            outline: none;
+            transition: 0.2s;
+        }
+
+        input:focus, select:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(0, 119, 182, 0.12);
+        }
+
+        .btn-submit {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: var(--white);
+            border: none;
+            width: 100%;
+            padding: 15px;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 6px 18px rgba(0, 119, 182, 0.2);
+        }
+
+        .btn-submit:hover {
+            opacity: 0.95;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 22px rgba(0, 119, 182, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2.5rem 1rem;
+            color: var(--text-muted);
+            font-size: 0.92rem;
+            border-top: 1px solid #e2e8f0;
+            background: #ffffff;
+            margin-top: 3rem;
+        }
+
+        .footer-dev {
+            color: var(--primary);
+            font-weight: 800;
+            margin-top: 0.5rem;
+            font-size: 1.05rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="top-header">
+        <div class="badges-wrap">
+            <span class="doctor-badge">عيادة استشارية متخصصة</span>
+            <span class="free-badge">✨ فحص النظر مجاناً في المركز</span>
+
+Raed ., [21/04/48 02:19 ص]
+</div>
+        <h1>الدكتور عبدالله قائد المخلافي</h1>
+        <div class="specialty-sub">لطب وجراحة العيون</div>
+        <div class="header-address">
+            📍 تعز - الثورة، تحت الأحوال المدنية، الخط المتجه إلى الموشكي
+        </div>
+        <div class="header-actions">
+            <a href="tel:+967777064939" class="btn-call-header">
+                📞 اتصال بالإدارة: 777064939
+            </a>
+            <a href="https://wa.me/967777064939" target="_blank" class="btn-call-header" style="background: #25d366; color: #fff;">
+                💬 واتساب مباشر
+            </a>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div class="location-box">
+            <span style="font-size: 1.5rem;">📍</span>
+            <div>
+                <strong>عنوان المركز:</strong> الثورة - تحت الأحوال المدنية - الخط المتجه للموشكي.
+            </div>
+        </div>
+
+        <div class="notice-box">
+            <span style="font-size: 1.4rem;">ℹ️</span>
+            <div>
+                <strong>تنبيه هام للمرضى الكرام:</strong><br>
+                الدخول عند الطبيب يتم بنظام الأسبقية بحسب حضور المريض إلى مقر المركز.
+            </div>
+        </div>
+
+        <section class="card">
+            <h2>🕒 مواعيد وأوقات الدوام الرسمي</h2>
+            <div class="schedule-grid">
+                <div class="schedule-item">
+                    <span class="schedule-day">السبت - الأحد - الأربعاء</span>
+                    <span class="schedule-time">صباحاً (من 8:30 صباحاً) + فترة مسائية</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="schedule-day">الإثنين - الثلاثاء</span>
+                    <span class="schedule-time">فترة مسائية فقط (من 2:30 ظهراً)</span>
+                </div>
+                <div class="schedule-item closed">
+                    <span class="schedule-day">الخميس والجمعة</span>
+                    <span class="schedule-time">إجازة رسمية للمركز</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>👓 قسم البصريات وأفخم النظارات والماركات</h2>
+            
+            <div class="glasses-intro">
+                <h3>🎉 فحص النظر بالكامل مجاناً لجميع زوار المركز!</h3>
+                <p>نوفر تشكيلة حصرية من أرقى الإطارات العالمية، العدسات الطبية المحمية (Blue Cut & Anti-Reflective)، والنظارات الشمسية الأصلية.</p>
+            </div>
+
+            <div class="glasses-grid">
+                <div class="glasses-card">
+                    <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&w=400&q=80" alt="نظارات دائرية نسائي">
+                    <div class="glasses-card-body">
+                        <h4>دائري نسائي راقي</h4>
+                        <p>تصاميم ناعمة وعصرية تناسب مختلف أشكال الوجوه بألوان جذابة.</p>
+                    </div>
+                </div>
+
+                <div class="glasses-card">
+                    <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=400&q=80" alt="نظارات دائرية رجالي">
+                    <div class="glasses-card-body">
+                        <h4>دائري رجالي كلاسيك</h4>
+                        <p>إطلالة فخمة وأنيقة من خامات معدنية وتيتانيوم متينة وعالية التحمل.</p>
+                    </div>
+                </div>
+
+                <div class="glasses-card">
+                    <img src="https://images.unsplash.com/photo-1508296695146-257a814070b4?auto=format&fit=crop&w=400&q=80" alt="إطارات مربعة">
+                    <div class="glasses-card-body">
+                        <h4>إطارات مربعة عصرية</h4>
+                        <p>رسمية وجريئة، ملائمة للعمل والاستخدام اليومي لكلا الجنسين.</p>
+                    </div>
+                </div>
+
+                <div class="glasses-card">
+
+Raed ., [21/04/48 02:19 ص]
+<img src="https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&w=400&q=80" alt="إطارات بلاستيك خفيفة">
+                    <div class="glasses-card-body">
+                        <h4>إطارات بلاستيك TR90</h4>
+                        <p>مرنة وخفيفة الوزن ومريحة جداً للاستخدام الطويل والقيادة.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="specialist-box">
+                <div class="specialist-info">
+                    <h4>مسؤول ومستشار قسم النظارات:</h4>
+                    <p>للاستفسار عن أسعار وتوافر الإطارات والعدسات الطبية المخصصة</p>
+                </div>
+                <div class="specialist-btns">
+                    <a href="tel:735881072" class="btn-opt call">📞 735881072</a>
+                    <a href="https://wa.me/967735881072" target="_blank" class="btn-opt">💬 واتساب النظارات</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>👁️ العمليات والخدمات الجراحية للمركز</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>جراحة المياه البيضاء (الساد)</h3>
+                    <p>إزالة المياه البيضاء بأحدث تقنية فاكو (الموجات فوق الصوتية) مع زراعة عدسات متطورة.</p>
+                </div>
+                <div class="service-item">
+                    <h3>المياه الزرقاء (الجلوكوما)</h3>
+                    <p>فحص وقياس دقيق لضغط قاع العين المستمر والعلاج لحماية العصب البصري.</p>
+                </div>
+                <div class="service-item">
+                    <h3>فحوصات البصر الشاملة</h3>
+                    <p>تشخيص كامل لعيوب الإبصار وفحص قاع العين بأجهزة كمبيوتر بصرية متقدمة.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>📅 حجز موعد وزيارة</h2>
+            <form id="bookingForm" onsubmit="handleBooking(event)">
+                <div class="form-group">
+                    <label>اسم المريض الكامل:</label>
+                    <input type="text" id="patientName" placeholder="أدخل اسم المريض" required>
+                </div>
+
+                <div class="form-group">
+                    <label>رقم هاتف المريض:</label>
+                    <input type="tel" id="patientPhone" placeholder="77XXXXXXX" required>
+                </div>
+
+                <div class="form-group">
+                    <label>نوع الخدمة المطلوبة:</label>
+                    <select id="serviceType">
+                        <option>فحص نظر مجاني ونظارات طبية</option>
+                        <option>معاينة وكشف عام عند الطبيب</option>
+                        <option>استشارة جراحة مياه بيضاء (ساد)</option>
+                        <option>متابعة ضغط العين (مياه زرقاء)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>الفترة واليوم المفضل للحضور:</label>
+                    <select id="visitDay" required>
+                        <option value="السبت - صباحاً (من 8:30 صباحاً)">السبت - صباحاً (من 8:30 صباحاً)</option>
+                        <option value="السبت - مساءً">السبت - مساءً</option>
+                        <option value="الأحد - صباحاً (من 8:30 صباحاً)">الأحد - صباحاً (من 8:30 صباحاً)</option>
+                        <option value="الأحد - مساءً">الأحد - مساءً</option>
+                        <option value="الإثنين - مساءً (من 2:30 ظهراً)">الإثنين - مساءً فقط (من 2:30 ظهراً)</option>
+                        <option value="الثلاثاء - مساءً (من 2:30 ظهراً)">الثلاثاء - مساءً فقط (من 2:30 ظهراً)</option>
+                        <option value="الأربعاء - صباحاً (من 8:30 صباحاً)">الأربعاء - صباحاً (من 8:30 صباحاً)</option>
+                        <option value="الأربعاء - مساءً">الأربعاء - مساءً</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-submit">تأكيد وإرسال الموعد عبر واتساب الإدارة</button>
+            </form>
+        </section>
+
+    </main>
+
+Raed ., [21/04/48 02:19 ص]
+<footer>
+        <div style="font-weight: 700;">الدكتور عبدالله قائد المخلافي - لطب وجراحة العيون</div>
+        <div style="font-size: 0.85rem; margin-top: 5px;">العنوان: الثورة - تحت الأحوال المدنية - الخط المتجه للموشكي</div>
+        <div style="font-size: 0.85rem; margin-top: 3px;">هاتف الإدارة: +967777064939 | قسم النظارات: 735881072</div>
+        <div class="footer-dev">تطوير: رائد الياسري</div>
+    </footer>
+
+    <script>
+        function handleBooking(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('patientName').value.trim();
+            const phone = document.getElementById('patientPhone').value.trim();
+            const service = document.getElementById('serviceType').value;
+            const day = document.getElementById('visitDay').value;
+
+            const clinicWhatsApp = "967777064939";
+
+            const message = *طلب حجز موعد - مركز د. عبدالله قائد المخلافي*%0A%0A +
+                            👤 *اسم المريض:* ${encodeURIComponent(name)}%0A +
+                            📞 *رقم الهاتف:* ${encodeURIComponent(phone)}%0A +
+                            🔬 *الخدمة المطلوبة:* ${encodeURIComponent(service)}%0A +
+                            🗓️ *الموعد المفضل:* ${encodeURIComponent(day)}%0A%0A +
+                            📌 _ملاحظة: تم الاطلاع على أن الدخول بحسب أسبقية الحضور إلى المركز._%0A +
+                            _تم الإرسال عبر التطبيق والموقع الرسمي للمركز_;
+
+            window.open(https://wa.me/${clinicWhatsApp}?text=${message}, '_blank');
+        }
+    </script>
+</body>
+</html>
